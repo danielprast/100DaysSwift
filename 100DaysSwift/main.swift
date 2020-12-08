@@ -7,5 +7,16 @@
 
 import Foundation
 
-print("Hello, World!")
+protocol RunLesson {
+    func learn()
+}
 
+//MARK: - Log Util
+func shout(_ key: String = "💩", _ value: Any) {
+    print("😎 \(key) : \(value)")
+}
+
+//MARK: - Code Excecution
+
+let lesson = DayOne()
+lesson.learn()
